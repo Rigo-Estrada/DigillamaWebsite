@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +9,7 @@
 }
 
 img{
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 
@@ -17,73 +19,29 @@ a{
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: #31b892;
     background-color: #BEEBDA;
-}
-nav{
-    max-width: 12000px;
-    margin: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    color: #BEEBDA;
 }
 
 .nav-logo{
-    max-width: 100px;
-}
-.nav-links{
-    font-weight: 700;
-    list-style: none;
+    max-width: 150px;
+    padding: 10px 10px;
     display: flex;
-    align-items: left;
-    gap: 3rem;
-
+    position: absolute;
+    left: 0px;
+    top: 10px;
 }
 
-.link a{
-    position:relative;
-    padding-bottom: 0.75rem;
-    color: #aaafae
+.name{
+    padding: 70px;
+    color:#BEEBDA;
+    background-color: #0F3039;
 }
-.bn632-hover {
-    width: 160px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align:center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  }
-  
-  .bn632-hover:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  }
-  
-  .bn632-hover:focus {
-    outline: none;
-  }
-  
-  .bn632-hover.bn21 {
-    background-image: linear-gradient(
-      to right,
-      #fc6076,
-      #ff9a44,
-      #ef9d43,
-      #e75516
-    );
-    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
-  }
+.h1,p{
+    font-size: large;
+    font-weight: 100;
+}
+
+
+
+
