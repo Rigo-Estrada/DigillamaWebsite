@@ -33,15 +33,24 @@ body{
 }
 
 .name{
-    padding: 70px;
+    display: flexbox;
+    position:relative;
+    padding: 50px;
+    padding-left: 130px;
     color:#BEEBDA;
     background-color: #0F3039;
 }
-.h1,p{
-    font-size: large;
-    font-weight: 100;
+button{
+    position: absolute;
+    right: 100px;
+    top:100px;
+    border: none;
+    color: #0F3039;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
 }
-
-
-
-
+.about-button{
+    border-radius: 50%;
+}
