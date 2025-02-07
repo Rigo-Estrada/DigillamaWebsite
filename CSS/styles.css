@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 *{
     padding: 0;
@@ -17,6 +17,15 @@ a{
     text-decoration: none;
 
 }
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Moves items to the right */
+    align-items: center; /* Centers them vertically */
+    padding: 40px; /* Adjust as needed */
+    background-color: #0F3039;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #BEEBDA;
@@ -29,28 +38,21 @@ body{
     display: flex;
     position: absolute;
     left: 0px;
-    top: 10px;
+    top: 1px;
 }
 
 .name{
-    display: flexbox;
     position:relative;
-    padding: 50px;
-    padding-left: 130px;
     color:#BEEBDA;
-    background-color: #0F3039;
+    right: 1050px;
+    
 }
-button{
-    position: absolute;
-    right: 100px;
-    top:100px;
-    border: none;
-    color: #0F3039;
-    padding: 20px;
-    text-decoration: none;
-    display: inline-block;
+button, .about-button, .contact-button {
     font-size: 30px;
-}
-.about-button{
-    border-radius: 50%;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adds spacing between buttons */
 }
