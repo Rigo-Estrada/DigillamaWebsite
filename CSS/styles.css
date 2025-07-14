@@ -54,6 +54,7 @@ a:visited{
 }
 .container .box .gallery-image img{
     width: 100%;
+    height: auto;
     padding-bottom: 15px;
     border-radius: 5px;
     padding: 5px;
