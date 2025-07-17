@@ -31,12 +31,24 @@ a:visited{
     padding: 10px;
 }
 
+.artist{
+    display: flex;
+    position: sticky;
+    right: 220px;
+}
+
 .artist-pages ul,li a{
     list-style-type: none;
     display: flex;
     text-decoration: none;
     padding: 10px;
     justify-content: flex-end;
+}
+
+.artist-pages ul{
+    display: flex;
+    position: relative;
+    left: 230px;
 }
 
 .container .box{
@@ -70,8 +82,12 @@ a:visited{
     width: 100%;
 }
 
-@media only screen and (max-width: 440px){
-
+@media only screen and (max-width: 903px){
+    .artist{
+    display: flex;
+    position: sticky;
+    right: 220px;
+}
 }
 
 footer{
