@@ -6,6 +6,9 @@
     font-family: serif;
 
 }
+body{
+    background-color: #BEEBDA;
+}
 
 header{
     display: flex;
@@ -51,48 +54,35 @@ a:visited{
     left: 230px;
 }
 
-.container .box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px  50px 10px 50px;
-    background-color: #BEEBDA;
+.gallery-image{
+    column-count: 3;
+    column-gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
-
-.container .box .gallery-image{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-}
-.container .box .gallery-image img{
+.gallery-image img{
     width: 100%;
     height: auto;
-    padding-bottom: 15px;
-    border-radius: 5px;
-    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: block;
 }
 
-@media only screen and (max-width: 769px){
-    .container .box{
-    flex-direction: column;
-}
-}
-
-.container .box .gallery-image{
-    width: 100%;
+@media (max-width: 548px) {
+    .gallery-image{
+        column-count:2;
+    }  
 }
 
-@media only screen and (max-width: 903px){
-    .artist{
-    display: flex;
-    position: sticky;
-    right: 220px;
-}
+@media (max-width: 248px) {
+    .gallery-image{
+        column-count:1;
+    }  
 }
 
-footer{
-    background-color: #0F3039;
-}
+
+
 
 
 
