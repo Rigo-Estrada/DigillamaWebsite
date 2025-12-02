@@ -6,6 +6,119 @@
     box-sizing: inherit;
 }
 
+body{
+    background-color: #BEEBDA;  
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #0F3039; 
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.nav-logo img {
+    width: 70px;     /* << shrink logo size */
+    height: auto;
+    display: block;
+}
+
+/* Title block */
+.name h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600; 
+    
+}
+.name a:hover {
+    color: #31B892;
+}
+
+.name p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #BEEBDA;
+}
+
+.name a {
+    text-decoration: none;
+    color: #BEEBDA;
+}
+
+/* Nav links */
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #BEEBDA;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #31B892;
+}
+
+/* Buttons */
+#button {
+    display: flex;
+    gap: 10px;
+}
+
+#button button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #31B892;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#button button:hover {
+    background: #31B892;
+}
+
+#button button a {
+    text-decoration: none;
+    color: #BEEBDA;
+    transition: color 0.3s ease;
+}
+
+#button button:hover a {
+    color: #fff;
+}
+
+/* Responsive — stacks layout on mobile */
+@media (max-width: 800px) {
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #button {
+        justify-content: center;
+    }
+}
+
+/* Gallery Settings */
 .container{
     width: 95%;
     margin: 2rem auto;
@@ -74,5 +187,116 @@
     transform: scale(1.06);   /* “pop out” effect */
     z-index: 10;             /* bring to front */
 }
+
+/* Footer */
+footer {
+    background: #0F3039;
+    padding: 40px 20px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Footer navigation links */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #BEEBDA;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #31B892;
+}
+
+/* Footer buttons */
+footer #button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer #button button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #BEEBDA;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer #button button:hover {
+    background: #BEEBDA;
+}
+
+footer #button button a {
+    text-decoration: none;
+    color: #BEEBDA;
+    transition: 0.3s ease;
+}
+
+footer #button button:hover a {
+    color: #31B892;
+}
+
+/* Name */
+footer .name h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+footer .name a {
+    text-decoration: none;
+    color: #BEEBDA;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer .name a:hover {
+    color: #31B892;
+}
+
+/* Socials */
+#socials h5 {
+    margin: 0;
+}
+
+#socials a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#socials a:hover {
+    color: #000;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer #button {
+        flex-direction: row;
+    }
+}
+
 
 
